@@ -4,13 +4,7 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/webApp-crm-e2e"
-    },
-    {
       "path": "./apps/webApp-crm"
-    },
-    {
-      "path": "./apps/api-crm-e2e"
     },
     {
       "path": "./apps/api-crm"

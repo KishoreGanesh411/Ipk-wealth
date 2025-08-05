@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "web": "nx start webApp-crm",
+    "api": "nx start @ipk-wealth/api-crm",
     "web:dev": "vite --config apps/webApp-crm/vite.config.ts",
     "web:build": "nx build @ipk-wealth/webApp-crm",
     "web:serve": "react-router-serve apps/webApp-crm/build/server/index.js --port 4000"
