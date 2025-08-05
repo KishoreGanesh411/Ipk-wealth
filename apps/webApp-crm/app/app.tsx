@@ -1,11 +1,13 @@
-// Uncomment this line to use CSS modules
-// import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { AppRouter } from "./components/routing";
+import "./index.css"
+
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="@ipk-wealth/webApp-crm" />
+      
+     <AppRouter/>
     </div>
   );
 }

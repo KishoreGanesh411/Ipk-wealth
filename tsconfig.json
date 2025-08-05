@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/webApp-crm"
+    },
+    {
+      "path": "./apps/api-crm-e2e"
+    },
+    {
+      "path": "./apps/api-crm"
     }
   ]
 }

@@ -2,26 +2,43 @@
   "name": "@ipk-wealth/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "web": "nx start webApp-crm",
+    "web:dev": "vite --config apps/webApp-crm/vite.config.ts",
+    "web:build": "nx build @ipk-wealth/webApp-crm",
+    "web:serve": "react-router-serve apps/webApp-crm/build/server/index.js --port 4000"
+  },
   "private": true,
   "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
     "@react-router/node": "^7.2.0",
     "@react-router/serve": "^7.2.0",
+    "antd": "^5.26.7",
+    "axios": "^1.6.0",
     "isbot": "^4.4.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-router": "^7.2.0"
+    "react-router": "^7.2.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@nestjs/schematics": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
     "@nx/devkit": "21.3.11",
     "@nx/eslint": "21.3.11",
     "@nx/eslint-plugin": "21.3.11",
     "@nx/js": "21.3.11",
+    "@nx/nest": "^21.3.11",
+    "@nx/node": "21.3.11",
     "@nx/playwright": "21.3.11",
     "@nx/react": "21.3.11",
     "@nx/vite": "21.3.11",
     "@nx/web": "21.3.11",
+    "@nx/webpack": "21.3.11",
     "@nx/workspace": "21.3.11",
     "@playwright/test": "^1.36.0",
     "@react-router/dev": "^7.2.0",
@@ -52,7 +69,8 @@
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0",
     "vite": "^6.0.0",
-    "vitest": "^3.0.0"
+    "vitest": "^3.0.0",
+    "webpack-cli": "^5.1.4"
   },
   "workspaces": [
     "apps/*"
